@@ -35,6 +35,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'puma'
 gem 'rack-timeout'
 gem 'sidekiq'
+gem 'devise'
+gem 'devise-bootstrap-views'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

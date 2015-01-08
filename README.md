@@ -1,5 +1,8 @@
 # Readme
 
+## Change a few things
+Do a project search for typesimple (that was the original app name) and change to your own app name.
+
 ## To start the app
 
 ```bash

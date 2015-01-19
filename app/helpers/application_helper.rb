@@ -1,5 +1,5 @@
 module ApplicationHelper
   def app_name
-    "Type Simple"
+    "TypeSimple"
   end
 end

@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.1.5'
+ruby '2.2.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
@@ -41,6 +41,7 @@ gem 'pry-rails'
 gem 'rails_12factor'
 gem 'jquery-turbolinks'
 gem 'bootstrap_form'
+gem 'better_errors'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

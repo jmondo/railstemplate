@@ -13,7 +13,7 @@ namespace :deploy do
   PRODUCTION_APP = 'findmevids'
 
   PRODUCTION_NEWRELIC_APP_ID = nil # put this in after your first deploy
-  NEWRELIC_HTTP_API_KEY = nil # put this in once you create an account
+  NEWRELIC_HTTP_API_KEY = "c45bda051a8f4f824547fa6e3b1a2b27340cf53de95aff2"
 
   task :set_production_app do
     APP = PRODUCTION_APP

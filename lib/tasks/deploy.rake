@@ -10,7 +10,7 @@ task :deploy_production => ['deploy:set_production_app',
                             'deploy:restart']
 
 namespace :deploy do
-  PRODUCTION_APP = 'changeme'
+  PRODUCTION_APP = 'findmevids'
 
   PRODUCTION_NEWRELIC_APP_ID = nil # put this in after your first deploy
   NEWRELIC_HTTP_API_KEY = nil # put this in once you create an account

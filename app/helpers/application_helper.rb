@@ -1,6 +1,6 @@
 module ApplicationHelper
   def app_name
-    "ChangeMe"
+    "Find me vids"
   end
 
   def active_li(*controllers)

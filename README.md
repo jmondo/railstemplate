@@ -1,7 +1,13 @@
 # Readme
 
 ## Change a few things
-Do a project search for typesimple (that was the original app name) and change to your own app name.
+Do a project search for changeme and change to your own app name.
+
+## Set up some gems
+* copy env file from another developer for keys (stripe, aws, etc)
+* set up commontator https://github.com/lml/commontator
+* uncomment stripe in application.rb and initializers/stripe.rb
+* change raygun initializer after you `heroku adddons:add raygun`
 
 ## To start the app
 

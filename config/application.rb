@@ -14,7 +14,7 @@ require "sprockets/railtie"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module Typesimple
+module Changeme
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
@@ -33,5 +33,19 @@ module Typesimple
 
     # Set the queue
     config.active_job.queue_adapter = :sidekiq
+
+    config.paperclip_defaults = {
+      storage: :s3,
+      s3_credentials: {
+        bucket: ENV['S3_DEV_BUCKET_NAME'],
+        access_key_id: ENV['AWS_ACCESS_KEY_ID'],
+        secret_access_key: ENV['AWS_SECRET_ACCESS_KEY']
+      }
+    }
+
+    # Rails.configuration.stripe = {
+    #   publishable_key: ENV['STRIPE_PUBLISHABLE_KEY'],
+    #   secret_key:      ENV['STRIPE_SECRET_KEY']
+    # }
   end
 end

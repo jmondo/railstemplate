@@ -33,6 +33,7 @@ class DeviseCreateUsers < ActiveRecord::Migration
 
       t.timestamps
     end
+    add_attachment :users, :avatar
 
     add_index :users, :email,                unique: true
     add_index :users, :reset_password_token, unique: true

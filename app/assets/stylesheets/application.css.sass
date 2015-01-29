@@ -2,3 +2,33 @@
 @import bootstrap-sprockets
 @import bootstrap
 @import rails_bootstrap_forms
+
+%vertical-align
+  position: relative
+  top: 50%
+  -webkit-transform: translateY(-50%)
+  -ms-transform: translateY(-50%)
+  transform: translateY(-50%)
+
+.card-container
+  position: relative
+  height: 200px
+
+.card
+  cursor: pointer
+
+  .well
+    height: 180px
+
+    p
+      @extend %vertical-align
+      text-align: center
+
+  &:first-child .well
+    background-color: $state-warning-bg
+
+  &:nth-child(2) .well
+    background-color: $state-danger-bg
+
+  &:nth-child(3) .well
+    background-color: $state-success-bg

@@ -407,7 +407,6 @@ DEPENDENCIES
   haml
   inherited_resources!
   jbuilder (~> 2.0)
-  jquery-rails
   jquery-turbolinks
   letter_opener_web
   newrelic_rpm

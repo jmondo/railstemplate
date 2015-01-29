@@ -4,10 +4,14 @@
 Do a project search for changeme and change to your own app name.
 
 ## Set up some gems
+* bundle update
 * copy env file from another developer for keys (stripe, aws, etc)
 * set up commontator https://github.com/lml/commontator
 * uncomment stripe in application.rb and initializers/stripe.rb
 * change raygun initializer after you `heroku adddons:add raygun`
+* change admin password in create admins migration
+* change new relic name, api key
+* change queue_adapter to sidekiq in application.rb if you want to use it
 
 ## To start the app
 

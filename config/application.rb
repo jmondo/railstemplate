@@ -32,7 +32,7 @@ module Changeme
     config.active_record.raise_in_transactional_callbacks = true
 
     # Set the queue
-    config.active_job.queue_adapter = :sidekiq
+    config.active_job.queue_adapter = :inline
 
     config.paperclip_defaults = {
       storage: :s3,

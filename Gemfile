@@ -28,8 +28,9 @@ gem 'sidekiq-history'
 gem 'sidekiq-failures'
 gem 'devise'
 gem 'activeadmin', github: 'activeadmin'
-gem 'inherited_resources', github: 'josevalim/inherited_resources', branch: 'rails-4-2'
+gem 'inherited_resources', github: 'josevalim/inherited_resources'
 gem 'stamp'
+gem 'letter_opener_web', group: :development
 
 gem 'pry-rails'
 gem 'rails_12factor', group: :production
@@ -40,6 +41,9 @@ gem 'paperclip'
 gem 'aws-sdk'
 gem 'stripe', git: 'https://github.com/stripe/stripe-ruby'
 gem 'commontator'
+gem 'rest-client'
+gem 'faker'
+gem 'newrelic_rpm'
 
 
 group :development, :test do

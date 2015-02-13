@@ -1,3 +1,5 @@
+require 'raygun/sidekiq'
+
 Raygun.setup do |config|
   config.api_key = "changeme"
   config.filter_parameters = Rails.application.config.filter_parameters
